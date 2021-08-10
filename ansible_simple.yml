@@ -1,6 +1,5 @@
 ---
-
-- hosts: servers
-  gather_facts: false
+- hosts: all
   tasks:
-  - ping:
+  - name: Print Hello World
+    debug: msg="Hello World"
