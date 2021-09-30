@@ -7,4 +7,4 @@ echo "= sample script 1" > /home/sample_script.txt
 echo "sample_1.sh: appending param: '$param1' to /home/sample_script.txt"
 echo $param1 >> /home/sample_script.txt
 
-sudo yum install docker
+yum install docker
