@@ -1,2 +1,1 @@
-echo "yay?"
-New-Item C:\Users\Administrator\Desktop\windows_sample_1_worked.txt
+echo "yay" > C:\Users\Administrator\Desktop\worked.txt
