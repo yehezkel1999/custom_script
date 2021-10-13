@@ -1,3 +1,3 @@
 executing script 1
 
-gcc --version
+ansible --version
