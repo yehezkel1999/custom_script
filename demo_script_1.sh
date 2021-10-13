@@ -1,3 +1,3 @@
-executing script 1
+echo executing script 1
 
 ansible --version
