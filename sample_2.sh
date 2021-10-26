@@ -1,8 +1,7 @@
-echo “sample_2.sh: creating -worked- file in /home/“
-echo "Yay" > /home/sample_script_2_worked.txt
+echo running sample_2.sh
 
-echo “sample_2.sh: appending to /home/sample_script.txt“
-echo "_ sample script 2 :)" >> /home/sample_script.txt
-
-echo "sample_2.sh: appending param: '$global_param' to /home/sample_script.txt"
-echo $global_param >> /home/sample_script.txt
+echo "= sample script 2" > /home/sample_script.txt
+echo $param3
+echo "$param3" >> /home/sample_script.txt
+echo $param4
+echo "$param4" >> /home/sample_script.txt
