@@ -5,7 +5,7 @@
     debug: msg="Creating file in /root"
   - name: Creating a file with content
     copy:
-      dest: "/root/ansible_script_file.txt"
+      dest: "/root/ansible_sample_file.txt"
       content: |
         line 01
         line 02
