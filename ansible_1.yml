@@ -4,7 +4,7 @@
     debug: msg="ansible_1.yml - Creating file in /root with -{{param1}}- and -{{param2}}-"
   - name: Creating a file with content
     copy:
-      dest: "/root/ansible_script_file.txt"
+      dest: "C:\Users\Administrator\Desktop\ansible_script_file.txt"
       content: |
         = ansible_1.yml
         {{param1}}
