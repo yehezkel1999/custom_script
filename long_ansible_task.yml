@@ -2,7 +2,7 @@
   tasks:
   - name: Print before long task
     debug: msg="starting long task (90 seconds)..."
-  - name: Long Task: sleep 90
+  - name: Long Task - sleep 90
     shell: sleep 90
   - name: Print after long task
     debug: msg="long task ended"
