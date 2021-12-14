@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+  - name: Print What Up
+    debug: msg="What Up"
