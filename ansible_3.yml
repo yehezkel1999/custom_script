@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+  - name: Print Messages
+    debug: msg="ansible_3.yml - Appending to file - /root/ansible_script_file.txt"
+  - name: Appending a line to /root/ansible_script_file.txt
+    lineinfile:
+      path: "/root/ansible_script_file.txt"
+      line: ~ ansible_3.yml
