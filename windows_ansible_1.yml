@@ -2,10 +2,7 @@
   tasks:
   - name: Print creating file
     debug: msg="windows_ansible_1.yml - Creating file in C:\Users\Administrator\Desktop\ with -{{param1}}- and -{{param2}}-"
-  - name: Creating a file with content
-    copy:
-      dest: "C:\Users\Administrator\Desktop\ansible_script_file.txt"
-      content: |
-        = windows_ansible_1.yml
-        {{param1}}
-        {{param2}}
+  - name: Creating a file
+    ansible.windows.win_file:
+      path: C:\Users\Administrator\Desktop\ansible_script_file.txt
+      state: touch
