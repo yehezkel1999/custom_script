@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+  - name: Print
+    debug: msg="task that doesn't exist"
+  - name: Will Fail
+    ggggggggggg: hhhhhhhhhhhhhh
