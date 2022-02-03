@@ -5,3 +5,5 @@ echo $param3
 echo "$param3" >> /root/sample_script.txt
 echo $param4
 echo "$param4" >> /root/sample_script.txt
+echo $aaa
+echo "$aaa" >> /root/sample_script.txt
