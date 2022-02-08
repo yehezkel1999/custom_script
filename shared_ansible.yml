@@ -1,0 +1,21 @@
+- hosts: group_1
+  tasks:
+  - name: Print creating file
+    debug: msg="shared_ansible.yml --> group_1 - Creating file in /root with -{{param1}}- and -{{param2}}-"
+  - name: touching file
+    shell: touch /root/ansible_script_file.txt
+  - name: Appending to file
+    lineinfile:
+      path: "/root/ansible_script_file.txt"
+      line: + shared_ansible.yml --> group_1            Params - {{param1}} {{param2}}
+
+- hosts: group_2
+  tasks:
+  - name: Print creating file
+    debug: msg="shared_ansible.yml --> group_2 - Creating file in /root with -{{param1}}- and -{{param2}}-"
+  - name: touching file
+    shell: touch /root/ansible_script_file.txt
+  - name: Appending to file
+    lineinfile:
+      path: "/root/ansible_script_file.txt"
+      line: + shared_ansible.yml --> group_2            Params - {{param1}} {{param2}}
