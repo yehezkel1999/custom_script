@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+  - name: Before Sleep Task
+    copy:
+      dest: "/root/before_ansible_sleep.txt"
+      content: |
+        = before ansible sleep
+  - name: Sleep Task - sleep 20
+    shell: sleep 20
+  - name: After Sleep Task
+    copy:
+      dest: "/root/after_ansible_sleep.txt"
+      content: |
+        = after ansible sleep
