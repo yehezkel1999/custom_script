@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+  - name: Print appending to file
+    debug: msg="ansible_2.yml - Appending to file - /root/ansible_script_file.txt, with -{{param3}}- and -{{param4}}-"
+  - name: Appending content to /root/ansible_script_file.txt
+    blockinfile:
+      path: /root/ansible_script_file.txt
+      block: |
+        -- ansible_2.yml
+        {{param3}}
+        {{param4}}
